@@ -1,0 +1,12 @@
+<div ng-controller="searchController">
+<form>
+  <label for="movieName">Search</label>
+  <input type="text" name="movieName" ng-model="movieName">
+  <button type="submit" ng-click="movieSearch()">Search for Movie</button>
+  <h1>{{movieName}}</h1>
+  <h2>{{bigObject}}</h2>
+  <div ng-repeat="movie in moviesList">
+    <p>{{movie.title}}</p>
+  </div>
+</form>
+</div> <!-- end searchController -->
