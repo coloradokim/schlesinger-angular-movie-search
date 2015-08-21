@@ -5,6 +5,10 @@
     <title>Movie Search!</title>
   </head>
   <body ng-controller="appController">
+    <label for="movieName">Search</label>
+    <input type="text" name="movieName" ng-model="movieName">
+    <button type="submit" ng-click="">Search for Movie</button>
+    <h1>{{movieName}}</h1>
     <p>
       {{bigObject}}
     </p>
