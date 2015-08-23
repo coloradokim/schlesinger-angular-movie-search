@@ -7,3 +7,11 @@ app.config(function($routeProvider) {
       controller: 'searchController'
     })
 });
+
+app.config(function($routeProvider) {
+  $routeProvider
+    .when('/:varMovie', {
+      templateUrl:'partials/show.html',
+      controller: 'searchController'
+    })
+});

@@ -1,6 +1,10 @@
 Specs:
 
-When a user enters a movie title into the search box and clicks the search button, make an API call to search for movies using the user input. Then, display all the search results on the same page. When a user clicks on specific search result, send them to another route which displays more detailed information about the specific movie. You'll need to make another type of OMDB API call. Lastly, users can start a new search from any page. To sum up the two main routes:
+1) When a user enters a movie title into the search box and clicks the search button, make an API call to search for movies using the user input.
+
+2) Then, display all the search results on the same page. When a user clicks on specific search result, send them to another route which displays more detailed information about the specific movie. You'll need to make another type of OMDB API call.
+
+3) Lastly, users can start a new search from any page. To sum up the two main routes:
 
 Search/Home Page:
 
