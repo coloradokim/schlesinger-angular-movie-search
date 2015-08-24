@@ -2,11 +2,11 @@
   <form>
     <label for="movieName">Search</label>
     <input type="text" name="movieName" ng-model="movieName">
-    <button type="submit" ng-click="movieSearch()">Search for Movie</button>
+    <button type="submit" ng-click="submit()">Search for Movie</button>
   </form>
 
     <div ng-repeat="movie in moviesArray">
-      <p><a href="/#/show" ng-click="showClick()">{{movie.Title}}</a></p>
+      <p><a href="/#/{{movieName}}">{{movie.Title}}</a></p>
       <p>Year: {{movie.Year}}</p>
   </div> <!-- end ng-repeat  -->
 </div> <!-- end searchController -->
