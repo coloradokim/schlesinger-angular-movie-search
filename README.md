@@ -13,10 +13,12 @@ When the user clicks the search button:
 Search OMDb API for movies with the input text in the title.
 Displays search results on the same page
 Each movie in the search results has a link to a 'show' page
+
 Show page:
 
 Shows the results of a more detailed OMDb API search using the movie's ID.
 Displays all the details of the specific movie, including the poster image of the movie.
+
 Bonus:
 
 A user can specify what type of data they are searching for: movie, series, or episode.

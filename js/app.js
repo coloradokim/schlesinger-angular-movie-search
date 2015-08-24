@@ -10,8 +10,8 @@ app.config(function($routeProvider) {
 
 app.config(function($routeProvider) {
   $routeProvider
-    .when('/:varMovie', {
+    .when('/show', {
       templateUrl:'partials/show.html',
-      controller: 'searchController'
+      controller: 'showController'
     })
 });

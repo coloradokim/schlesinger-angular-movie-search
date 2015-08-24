@@ -1,1 +1,21 @@
-<h1>Hi! You made it here! yay! </h1>
+<div ng-controller="showController">
+  <h1>{{showData.Title}}</h1>
+  <h2>Directed by {{showData.Director}}</h2>
+  <h3>{{showData.Plot}}</h3>
+  <h4>Starring: {{showData.Actors}}</h4>
+  <h4>Additional Details</h4>
+  <p><strong>Awards</strong></p>
+  <p>{{showData.Awards}}</p>
+  <p><strong>Country</strong></p>
+  <p>{{showData.Country}}</p>
+  <p><strong>Genre</strong></p>
+  <p>{{showData.Genre}}</p>
+  <p><strong>Language</strong></p>
+  <p>{{showData.Language}}</p>
+  <p><strong>Rated</strong></p>
+  <p>{{showData.Rated}}</p>
+  <p><strong>Released</strong></p>
+  <p>{{showData.Released}}</p>
+  <p><strong>Poster URL</strong></p>
+  <p>{{showData.Poster}}</p>
+</div>
