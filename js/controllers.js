@@ -10,7 +10,7 @@ app.controller('searchController', function ($scope, $http, $routeParams) {
 
 app.controller('showController', function ($scope, $http, $routeParams) {
   $scope.showData;
-  $http.get('http://www.omdbapi.com/?t=' + $routeParams.id)
+  $http.get('http://www.omdbapi.com/?i=' + $routeParams.id)
     .then(function(showData) {
       $scope.showData = showData.data;
       console.log($routeParams.id);
