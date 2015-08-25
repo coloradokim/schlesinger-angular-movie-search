@@ -1,6 +1,6 @@
 app.controller('searchController', function ($scope, $http, $routeParams) {
     $scope.movieName;
-    $scope.submit = function(movieName) {
+    $scope.movieSearch = function(movieName) {
     $http.get('http://www.omdbapi.com/?s=' + $scope.movieName)
       .then(function(movieData) {
         $scope.moviesArray = movieData.data.Search;

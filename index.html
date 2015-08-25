@@ -4,10 +4,19 @@
     <meta charset="utf-8">
     <title>Movie Search!</title>
   </head>
-  <body>
-    <h1>Movie Search</h1>
 
-      <div ng-view></div>
+  <body ng-controller="searchController">
+    <header>
+      <h1>Movie Search</h1>
+      <h3>Enter a movie title!</h3>
+        <form>
+          <label for="movieName">Search</label>
+          <input type="text" name="movieName" ng-model="movieName">
+          <button type="submit" ng-click="movieSearch()">Search for Movie</button>
+        </form>
+    </header>
+
+  <div ng-view></div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.4/angular.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.4/angular-route.js"></script>

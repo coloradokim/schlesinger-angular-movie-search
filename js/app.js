@@ -1,4 +1,4 @@
-var app = angular.module("movieSearchApp", ['ngRoute'])
+var app = angular.module("movieSearchApp", ['ngRoute']);
 
 app.config(function($routeProvider) {
   $routeProvider
@@ -9,5 +9,5 @@ app.config(function($routeProvider) {
     .when('/:id', {
       templateUrl:'partials/show.html',
       controller: 'showController'
-    })
+    });
 });

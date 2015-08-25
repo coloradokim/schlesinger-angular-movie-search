@@ -1,5 +1,6 @@
-<div ng-controller="showController">
+<article ng-controller="showController">
   <h1>{{showData.Title}}</h1>
+  <img ng-src="{{showData.Poster}}">
   <h2>Directed by {{showData.Director}}</h2>
   <h3>{{showData.Plot}}</h3>
   <h4>Starring: {{showData.Actors}}</h4>
@@ -16,6 +17,4 @@
   <p>{{showData.Rated}}</p>
   <p><strong>Released</strong></p>
   <p>{{showData.Released}}</p>
-  <p><strong>Poster URL</strong></p>
-  <p>{{showData.Poster}}</p>
-</div>
+</article>
