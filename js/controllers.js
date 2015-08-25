@@ -1,8 +1,9 @@
-app.controller('searchController', function ($scope, $http, $routeParams) {
+app.controller('searchController', function ($scope, $http, $routeParams, $location) {
     $scope.movieName;
     $scope.movieSearch = function(movieName) {
     $http.get('http://www.omdbapi.com/?s=' + $scope.movieName)
       .then(function(movieData) {
+        $location.path('/')
         $scope.moviesArray = movieData.data.Search;
       });
     }
