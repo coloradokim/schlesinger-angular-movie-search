@@ -1,3 +1,5 @@
+Live Site: https://mighty-harbor-3519.herokuapp.com/#/
+
 Specs:
 
 1) When a user enters a movie title into the search box and clicks the search button, make an API call to search for movies using the user input.
